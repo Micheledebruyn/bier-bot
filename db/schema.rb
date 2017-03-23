@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20170323140637) do
     t.string   "country_of_origin"
     t.float    "alcohol_percentage"
     t.string   "brand"
-    t.string   "type"
+    t.string   "category"
     t.string   "colour"
     t.boolean  "classic"
     t.integer  "clarity"

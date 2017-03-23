@@ -6,7 +6,7 @@ class CreateBeers < ActiveRecord::Migration[5.0]
       t.string :country_of_origin
       t.float :alcohol_percentage
       t.string :brand
-      t.string :type
+      t.string :category
       t.string :colour
       t.boolean :classic
       t.integer :clarity

@@ -51,7 +51,7 @@ class BeersController < ApplicationController
       :country_of_origin,
       :alcohol_percentage,
       :brand,
-      :type,
+      :category,
       :colour,
       :classic,
       :clarity,
