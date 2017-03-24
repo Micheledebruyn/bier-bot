@@ -55,7 +55,8 @@ class BeersController < ApplicationController
       :colour,
       :classic,
       :clarity,
-      :taste
+      :taste,
+      :photo
       )
   end
 end
