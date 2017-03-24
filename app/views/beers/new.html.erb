@@ -1,124 +1,122 @@
 <div class="container">
-<div class="row">
-<form class="simple_form col s6 offset-s3" novalidate="novalidate" id="new_beer" action="/beers" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="lk7eIgtAAuPd+/q7rWotd2bs9Fx7bQ4aFIjd0aZISWoRnvISCqh1b9wz7AC79lM6BCUQ7Ycx2rX3gKzTgZ1d2A==">
-<h4>
-  Add a beer
-</h4>
+  <div class="row">
+    <form class="simple_form col s6 offset-s3" novalidate="novalidate" id="new_beer" action="/beers" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="lk7eIgtAAuPd+/q7rWotd2bs9Fx7bQ4aFIjd0aZISWoRnvISCqh1b9wz7AC79lM6BCUQ7Ycx2rX3gKzTgZ1d2A==">
+      <h4>
+        Add a beer
+      </h4>
 
-<div class="row">
-  <div class="input-field col s12">
-    <input placeholder="Beer title"  name="beer[title]" id="first_name" type="text" class="validate">
-    <label for="first_name"></label>
-  </div>
-</div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Beer title"  name="beer[title]" id="first_name" type="text" class="validate">
+          <label for="first_name"></label>
+        </div>
+      </div>
 
-<div class="row">
-  <div class="input-field col s12">
-    <textarea placeholder="Beer description" id="textarea1" class="materialize-textarea" name="beer[description]"></textarea>
-    <label for="textarea1"></label>
-  </div>
-</div>
-
-
- <div class="row">
-    <div class="input-field col s12">
-      <i class="material-icons prefix">person_pin</i>
-      <input type="text" id="autocomplete-input" class="autocomplete_country" name="beer[country_of_origin]">
-      <label for="autocomplete-input">Country of origin</label>
-    </div>
-</div>
-
-<div class="row">
-  <div class="input-field col s12">
-    <input placeholder="Promilage"  name="beer[alcohol_percentage]" id="first_name" type="text" class="validate">
-    <label for="first_name"></label>
-  </div>
-</div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea placeholder="Beer description" id="textarea1" class="materialize-textarea" name="beer[description]"></textarea>
+          <label for="textarea1"></label>
+        </div>
+      </div>
 
 
-<div class="row">
-  <div class="input-field col s12">
-    <input placeholder="Beer brand"  name="beer[brand]" id="first_name" type="text" class="validate">
-    <label for="first_name"></label>
-  </div>
-</div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">person_pin</i>
+          <input type="text" id="autocomplete-input" class="autocomplete_country" name="beer[country_of_origin]">
+          <label for="autocomplete-input">Country of origin</label>
+        </div>
+      </div>
 
- <div class="row">
-    <div class="input-field col s12">
-      <i class="material-icons prefix">label</i>
-      <input type="text" id="autocomplete-input" class="autocomplete_category" name="beer[category]">
-      <label for="autocomplete-input">Category</label>
-    </div>
-</div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Promilage"  name="beer[alcohol_percentage]" id="first_name" type="text" class="validate">
+          <label for="first_name"></label>
+        </div>
+      </div>
 
-<div class="row">
-  <div class="input-field col s12">
-    <input placeholder="Beer colour"  name="beer[colour]" id="first_name" type="text" class="validate">
-    <label for="first_name"></label>
-  </div>
-</div>
 
-<div class="form-group radio_buttons optional beer_classic">
-  <label class="control-label radio_buttons optional">
-  Is it a classic?
-  </label>
-  <input type="hidden" name="beer[classic]" value="">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Beer brand"  name="beer[brand]" id="first_name" type="text" class="validate">
+          <label for="first_name"></label>
+        </div>
+      </div>
 
-<p>
-      <input name="group1" type="radio" id="test1"  value="yes"/>
-      <label for="test1">Yes</label>
-    </p>
-    <p>
-      <input name="group1" type="radio" id="test2"  value="no"/>
-      <label for="test2">No</label>
-    </p>
-</div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">label</i>
+          <input type="text" id="autocomplete-input" class="autocomplete_category" name="beer[category]">
+          <label for="autocomplete-input">Category</label>
+        </div>
+      </div>
 
-  <div class="form-group integer optional beer_clarity">
-  <label class="control-label integer optional" for="beer_clarity">
-  Clarity
-  </label>
-    <p class="range-field">
-      <input type="range" id="test5" min="0" max="10" name="beer[clarity]"/>
-    </p>
-    </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Beer colour"  name="beer[colour]" id="first_name" type="text" class="validate">
+          <label for="first_name"></label>
+        </div>
+      </div>
 
-<div class="form-group radio_buttons optional beer_classic">
-  <label class="control-label radio_buttons optional">
-  How does it taste?
-  </label>
-  <input type="hidden" name="beer[taste]" value="">
+      <div class="form-group radio_buttons optional beer_classic">
+        <label class="control-label radio_buttons optional">
+          Is it a classic?
+        </label>
+        <input type="hidden" name="beer[classic]" value="">
 
-<p>
-      <input name="group1" type="radio" id="fris"  value="fris"/>
-      <label for="fris">Fris</label>
-    </p>
-    <p>
-      <input name="group1" type="radio" id="zoet"  value="zoet"/>
-      <label for="zoet">Zoet</label>
-    </p>
         <p>
-      <input name="group1" type="radio" id="bitter"  value="bitter"/>
-      <label for="bitter">Bitter</label>
-    </p>
+          <input name="group1" type="radio" id="test1"  value="yes"/>
+          <label for="test1">Yes</label>
+        </p>
         <p>
-      <input name="group1" type="radio" id="zuur"  value="zuur"/>
-      <label for="zuur">Zuur</label>
-    </p>
+          <input name="group1" type="radio" id="test2"  value="no"/>
+          <label for="test2">No</label>
+        </p>
+      </div>
+
+      <div class="form-group integer optional beer_clarity">
+        <label class="control-label integer optional" for="beer_clarity">
+          Clarity
+        </label>
+        <p class="range-field">
+          <input type="range" id="test5" min="0" max="10" name="beer[clarity]"/>
+        </p>
+      </div>
+
+      <div class="form-group radio_buttons optional beer_classic">
+        <label class="control-label radio_buttons optional">
+          How does it taste?
+        </label>
+        <input type="hidden" name="beer[taste]" value="">
+
         <p>
-      <input name="group1" type="radio" id="hartig"  value="hartig"/>
-      <label for="hartig">Hartig</label>
-    </p>
-            <p>
-      <input name="group1" type="radio" id="fruitig"  value="fruitig"/>
-      <label for="fruitig">Fruitig</label>
-    </p>
-</div>
+          <input name="group1" type="radio" id="fris"  value="fris"/>
+          <label for="fris">Fris</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="zoet"  value="zoet"/>
+          <label for="zoet">Zoet</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="bitter"  value="bitter"/>
+          <label for="bitter">Bitter</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="zuur"  value="zuur"/>
+          <label for="zuur">Zuur</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="hartig"  value="hartig"/>
+          <label for="hartig">Hartig</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="fruitig"  value="fruitig"/>
+          <label for="fruitig">Fruitig</label>
+        </p>
+      </div>
 
+      <input type="submit" name="commit" value="Create Beer" data-disable-with="Create Beer" class="waves-effect waves-light btn">
 
-
-  <input type="submit" name="commit" value="Create Beer" data-disable-with="Create Beer" class="waves-effect waves-light btn">
-
-</form>
-</div>
+    </form>
+  </div>
 </div>
