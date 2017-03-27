@@ -3,7 +3,10 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img src="images/sample-1.jpg">
+            <%# if beer.photo? %>
+            <%#= cl_image_tag beer.photo.path, width: 200, height: 300, crop: :fill %>
+            <%# end %>
+              <!-- <img src="images/sample-1.jpg"> -->
               <span class="card-title"><%= beer.title %></span>
             </div>
             <div class="card-content">
